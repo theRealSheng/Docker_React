@@ -10,7 +10,7 @@ script:
   - docker run therealsheng/docker-react npm run test -- --coverage
 
 deploy:
-  provides: elasticbeanstalk
+  provider: elasticbeanstalk
   region: "us-west-2"
   app: "Docker_react"
   env: "DockerReact-env"
